@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Major</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/datepicker3.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>University</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>University</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="images/logo.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>University of Puthisastra</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="profile.html" class="active">
+            <i class="fa fa-user"></i> <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="major.html">
+            <i class="fa fa-th"></i> <span>Major</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="scholarship.html">
+            <i class="fa fa-university"></i> <span>Scholarship</span>
+          </a>
+        </li>
+        <li>
+          <a href="event.html">
+            <i class="fa fa-table"></i> <span>Events</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Major list
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="box">
+        <div class="box-body">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Concentration</th>
+                <th>Faculty</th>
+                <th>Degree</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Medicine</a></td>
+                <td>Health Sciences</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Pharmacy</a></td>
+                <td>Health Sciences</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Dentistry</a></td>
+                <td>Health Sciences</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Nursing</a></td>
+                <td>Health Sciences</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Economics</a></td>
+                <td>Economics and Business</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Finance and Banking</a></td>
+                <td>Economics and Business</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">English</a></td>
+                <td>Arts and Humanities</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Agronomy</a></td>
+                <td>Rural Development and Agriculture</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Animal Science</a></td>
+                <td>Rural Development and Agriculture</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Database and Programming</a></td>
+                <td>Science and Technology</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Networking</a></td>
+                <td>Science and Technology</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">MSc. IT</a></td>
+                <td>Science and Technology</td>
+                <td>Master Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#" data-toggle="modal" data-target="#detailMajor">Law</a></td>
+                <td>Law</td>
+                <td>Bachelor Degree</td>
+                <td></td>
+                <td></td>
+                <td>
+                        <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-app" href="#" title="Delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- /.box -->
+      <!-- Modal -->
+      <div class="modal fade" id="editMajor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Edit Concentration</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="concentration">Concentration</label>
+                  <input type="text" class="form-control" id="concentration" placeholder="Enter Concentration">
+                </div>
+                <div class="form-group">
+                  <label for="faculty">Faculty</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Health Sciences</option>
+                    <option>Health Sciences</option>
+                    <option>Economics and Business</option>
+                    <option>Arts and Humanities</option>
+                    <option>Rural Development and Agriculture</option>
+                    <option>Science and Technology</option>
+                    <option>Law</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;">
+                    <span class="dropdown-wrapper" aria-hidden="true"></span>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <label for="degree">Degree</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Bachelor Degree</option>
+                    <option>Bachelor Degree</option>
+                    <option>Master Degree</option>
+                    <option>Association</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;">
+                    <span class="dropdown-wrapper" aria-hidden="true"></span>
+                  </span>
+                </div>
+                <div class="form-group date">
+                  <label for="degree">Date</label>
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" class="form-control pull-right" id="datepicker" placeholder="11/27/2016">
+                </div>
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </div>
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail -->
+      <div class="modal fade" id="detailMajor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Database and Programming</h4>
+            </div>
+            <div class="modal-body">
+              <p>Faculty of Science and Technology</p>
+              <p>
+                With the increasing importance of computers and
+                information technology (IT) in the workplace,
+                computer knowledge is an indispensable skill for
+                almost all professional fields. The Bachelor of
+                Science in Computer Science degree provides
+                students with necessary training and technical
+                knowledge in various aspects of software for the
+                IT industry. The course prepares skilled IT
+                professionals who are able to meet the demands
+                of the job market and the broader economy,
+                particularly in the development of computer
+                application systems for companies in Cambodia.
+              </p>
+              <p>
+                Upon completion of this four year degree,
+                students are proficient in:
+                <br>
+              </p>
+              <ul>
+                <li> Designing and coding structured programs in commonly used computer languages; </li>
+                <li> Performing computer programming and object-oriented programming;</li>
+                <li> Utilizing database management systems </li>
+                <li> Effectively developing network and Internet systems </li>
+                <li> Applying structured and object-oriented development approaches in software development </li>
+                <li> Assisting in formulating and developing Client-Server solutions and Client-Sever database systems </li>
+                <li> Identifying the components in various computer systems configurations. </li>
+                <br>
+                  Students who graduate from this course find
+                  employment in a wide range of private and
+                  public services and organizations. Graduates
+                  work in IT-related fields including client
+                  services, web development, network operations,
+                  program structuring, data structuring and
+                  object-oriented programming (OOP).
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="js/Chart.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+</script>
+</body>
+</html>

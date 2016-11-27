@@ -19,6 +19,10 @@ width: 100%;
 .product-title {
     min-height: 30px;
 }
+.image-box img {
+    width: 50%;
+    min-width: auto;
+}
 .product .product-sale-off {
 width: auto;
 padding: 0 10px;
@@ -270,8 +274,3 @@ margin-top: -1px;
         margin-top: 40px;
     }
 }​
-
-.image-box img {
-    width: 50%;
-    min-width: auto;
-}
