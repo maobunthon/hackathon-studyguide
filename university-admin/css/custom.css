@@ -38,3 +38,11 @@
 .box-body {
 	position: relative;
 }
+
+img {
+	width: 100%;
+}
+
+.icheck {
+	padding-left: 20px;
+}

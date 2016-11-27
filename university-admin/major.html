@@ -27,12 +27,13 @@
 <div class="wrapper">
 
   <header class="main-header">
-    <!-- Logo -->
     <a href="index.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>University</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>University</span>
+      <span class="logo-mini">
+        <img src="../assets/studyguide.png" height="10%" alt="">
+      </span>
+      <span class="logo-lg">
+        <img src="../assets/studyguide.png" height="10%" alt="">
+      </span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -97,6 +98,9 @@
     <section class="content-header">
       <h1>
         Major list
+        <button type="button" class="btn btn-app" data-toggle="modal" data-target="#editMajor">
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </button>
       </h1>
     </section>
 
@@ -335,7 +339,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Edit Concentration</h4>
+              <h4 class="modal-title" id="myModalLabel">Concentration</h4>
             </div>
             <div class="modal-body">
               <form role="form">
